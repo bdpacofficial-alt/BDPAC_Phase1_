@@ -138,7 +138,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
       )}
 
       <aside
-        className={}
+        className={`fixed inset-y-0 left-0 z-50 w-72 flex flex-col bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 overflow-hidden transform transition-transform duration-300 ease-in-out lg:static lg:z-auto lg:translate-x-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
         <div className="p-3 overflow-y-auto flex-1 space-y-4">
           
@@ -164,7 +164,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                       key={item.name + item.href}
                       href={item.href}
                       onClick={onClose}
-                      className={}
+                      className={`flex items-center gap-2.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition ${isActive ? 'bg-sky-500/10 text-sky-600 dark:text-sky-400' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
                     >
                       <Icon className="w-3.5 h-3.5 shrink-0" />
                       <span className="truncate">{item.name}</span>
@@ -214,7 +214,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                                   key={sub.name}
                                   href={sub.href}
                                   onClick={onClose}
-                                  className={}
+                                  className={`flex items-center gap-2 px-2.5 py-1 rounded-lg text-[11px] font-medium transition ${isActive ? 'bg-sky-500/10 text-sky-600 dark:text-sky-400' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
                                 >
                                   <SubIcon className="w-3 h-3" />
                                   <span>{sub.name}</span>
@@ -234,7 +234,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                       key={item.name + item.href}
                       href={item.href}
                       onClick={onClose}
-                      className={}
+                      className={`flex items-center gap-2.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition ${isActive ? 'bg-sky-500/10 text-sky-600 dark:text-sky-400' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
                     >
                       <Icon className="w-3.5 h-3.5 shrink-0" />
                       <span className="truncate">{item.name}</span>
@@ -267,7 +267,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                       key={item.name + item.href}
                       href={item.href}
                       onClick={onClose}
-                      className={}
+                      className={`flex items-center gap-2.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition ${isActive ? 'bg-sky-500/10 text-sky-600 dark:text-sky-400' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
                     >
                       <Icon className="w-3.5 h-3.5 shrink-0" />
                       <span className="truncate">{item.name}</span>
@@ -300,7 +300,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                       key={item.name + item.href}
                       href={item.href}
                       onClick={onClose}
-                      className={}
+                      className={`flex items-center gap-2.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition ${isActive ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
                     >
                       <Icon className="w-3.5 h-3.5 shrink-0" />
                       <span className="truncate">{item.name}</span>
