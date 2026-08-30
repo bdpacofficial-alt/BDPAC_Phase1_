@@ -14,7 +14,7 @@ export default function Link({ href, children, onClick, className, ...props }: L
     }
   };
 
-  const hashHref = href && href.startsWith('/') ?  : href;
+  const hashHref = href && href.startsWith('/') ? `#${href}` : href;
 
   return (
     <a href={hashHref} onClick={handleClick} className={className} {...props}>
